@@ -7,37 +7,59 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            color: #f0f0f0;
             text-align: center;
-            padding: 20px;
+            padding: 40px;
+            margin: 0;
         }
+
         h1 {
+            font-size: 48px;
+            font-weight: 900;
             color: #ffffff;
+            margin-bottom: 30px;
+            letter-spacing: 2px;
         }
+
         .bot-button {
             display: inline-block;
-            margin: 10px;
-            padding: 15px 30px;
-            background-color: #007bff;
-            color: white;
+            margin: 15px;
+            padding: 15px 40px;
+            background-color: #ffccd5;
+            color: #f8f8f8;
             text-decoration: none;
-            border-radius: 5px;
-            font-size: 18px;
+            border-radius: 12px;
+            font-size: 20px;
+            font-weight: 600;
+            transition: background-color 0.3s, transform 0.3s;
+            box-shadow: 0 8px 20px rgba(255, 204, 213, 0.3);
             cursor: pointer;
         }
+
         .bot-button:hover {
-            background-color: #0056b3;
+            background-color: #ff99ac;
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(255, 153, 172, 0.5);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
         }
     </style>
 </head>
 <body>
 
-<h1>Список всех ботов</h1>
+<div class="container">
+    <h1>Список всех ботов</h1>
 
-<!-- Кнопки с ссылками на Telegram-ботов -->
-<a href="https://t.me/BotFather" class="bot-button" target="_blank">Главный бот</a>
-<a href="https://t.me/mood_playlist_bot" class="bot-button" target="_blank">Плейлист по настроению</a>
-<a href="https://t.me/file_converter_bot" class="bot-button" target="_blank">Конвертер файлов</a>
-<a href="https://t.me/partner_section_bot" class="bot-button" target="_blank">Партнерский раздел</a>
+    <!-- Кнопки с ссылками на Telegram-ботов -->
+    <a href="https://t.me/BotFather" class="bot-button" target="_blank">Главный бот</a>
+    <a href="https://t.me/mood_playlist_bot" class="bot-button" target="_blank">Плейлист по настроению</a>
+    <a href="https://t.me/file_converter_bot" class="bot-button" target="_blank">Конвертер файлов</a>
+    <a href="https://t.me/partner_section_bot" class="bot-button" target="_blank">Партнерский раздел</a>
+</div>
 
 </body>
 </html>
